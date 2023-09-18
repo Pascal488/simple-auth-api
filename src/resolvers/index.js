@@ -19,7 +19,7 @@ export const resolvers = {
                         if (!user ) {
                                 throw new GraphQLError("User not found")
                         } else if (!user.email) {
-                                throw new GraphQLError("User id must be provided")
+                                throw new GraphQLError("User email must be provided")
 
                         } else {
                                 return {
